@@ -1,0 +1,14 @@
+name: Simple CI Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Echo a message
+      run: echo "Workflow run successfully!"
